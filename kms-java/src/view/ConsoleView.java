@@ -98,4 +98,16 @@ public class ConsoleView {
             tampilkanDaftar(controller.cariByNama(nama));
         }
     }
+
+    private void prosesFilterData() {
+        System.out.println("Filter berdasarkan: 1) Jenis Narkotika  2) Pengadilan");
+        int pilihan = input.bacaPilihanMenu("Pilih", 1, 2);
+        if (pilihan == 1) {
+            String jenis = input.bacaTeks("Jenis Narkotika");
+            tampilkanDaftar(controller.filterByJenis(jenis));
+        } else {
+            String pengadilan = input.bacaTeks("Nama Pengadilan");
+            tampilkanDaftar(controller.filterByPengadilan(pengadilan));
+        }
+    }
 }
