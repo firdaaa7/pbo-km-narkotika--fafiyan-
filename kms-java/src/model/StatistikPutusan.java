@@ -98,5 +98,5 @@ public class StatistikPutusan {
         for (String baris : distribusiPeran) {
             System.out.println("  - " + baris);
         }
-
+    }
 }
