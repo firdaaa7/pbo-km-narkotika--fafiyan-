@@ -25,3 +25,7 @@ public class KnowledgeController {
         return true;
     }
 
+    public ArrayList<Putusan> getSemuaData() {
+        return repository.getDaftarSemua();
+    }
+
