@@ -53,4 +53,29 @@ public class ConsoleView {
             p.tampilkan();
         }
     }
+    private void prosesTambahData() {
+        String nomorPerkara = input.bacaTeks("Nomor Perkara");
+        String pengadilan = input.bacaTeks("Pengadilan");
+        String tanggalPutusan = input.bacaTeks("Tanggal Putusan");
+        String namaTerdakwa = input.bacaTeks("Nama Terdakwa");
+        int umurTerdakwa = input.bacaAngka("Umur Terdakwa");
+        String jenisNarkotika = input.bacaTeks("Jenis Narkotika");
+        double beratBarangBukti = input.bacaDesimal("Berat Barang Bukti (gram)");
+        String pasalDilanggar = input.bacaTeks("Pasal Dilanggar");
+        String peranTerdakwa = input.bacaTeks("Peran Terdakwa");
+        int vonisHukuman = input.bacaAngka("Vonis Hukuman (bulan)");
+        double vonisDenda = input.bacaDesimal("Vonis Denda (rupiah)");
+        String namaHakim = input.bacaTeks("Nama Hakim");
+
+        Putusan p = new Putusan(nomorPerkara, pengadilan, tanggalPutusan, namaTerdakwa,
+                umurTerdakwa, jenisNarkotika, beratBarangBukti, pasalDilanggar,
+                peranTerdakwa, vonisHukuman, vonisDenda, namaHakim);
+
+        try {
+            controller.tambahData(p);
+            System.out.println("Data berhasil ditambahkan.");
+        } catch (DataTidakValidException e) {
+            System.out.println("Gagal menambah data: " + e.getMessage());
+        }
+    }
 }
