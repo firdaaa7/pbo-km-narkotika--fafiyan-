@@ -29,3 +29,31 @@ public class KnowledgeController {
         return repository.getDaftarSemua();
     }
 
+    public Putusan cariData(String nomor) {
+        return repository.cariByNomor(nomor);
+    }
+
+    public ArrayList<Putusan> cariByNama(String nama) {
+        return repository.cariByNama(nama);
+    }
+
+    public ArrayList<Putusan> filterByJenis(String jenis) {
+        return repository.filterByJenis(jenis);
+    }
+
+    public ArrayList<Putusan> filterByPengadilan(String pengadilan) {
+        return repository.filterByPengadilan(pengadilan);
+    }
+
+    public boolean hapusData(String nomor) {
+        return repository.hapus(nomor);
+    }
+
+    public StatistikPutusan getStatistik() {
+        return new StatistikPutusan(repository.getDaftarSemua());
+    }
+
+    public void muatDataAwal() {
+        repository.muatDataSampel();
+    }
+}
