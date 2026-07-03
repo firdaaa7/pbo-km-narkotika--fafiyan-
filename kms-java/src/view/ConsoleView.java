@@ -44,5 +44,13 @@ public class ConsoleView {
         System.out.println("6. Lihat Statistik");
         System.out.println("7. Keluar");
     }
-
+    private void tampilkanDaftar(ArrayList<Putusan> daftar) {
+        if (daftar.isEmpty()) {
+            System.out.println("Tidak ada data.");
+            return;
+        }
+        for (Putusan p : daftar) {
+            p.tampilkan();
+        }
+    }
 }
