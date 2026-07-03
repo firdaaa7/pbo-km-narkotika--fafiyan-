@@ -148,7 +148,6 @@ public class KnowledgeRepository {
                 "Bandar", 90, 1000000000.0,
                 "Silfi Yanti Zulfia, S.H., M.H."));
 
-        // Nomor 28: 3 terdakwa dalam 1 nomor perkara → suffix -A, -B, -C
         simpan(new Putusan(
                 "28-A/Pid.Sus/2024/PN Sby", "PN Surabaya", "29-02-2024",
                 "Kuswantoro Bin Tohir", 26, "Sabu-sabu", 101.30,
