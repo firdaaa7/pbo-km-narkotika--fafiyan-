@@ -34,3 +34,15 @@ public class InputHandler {
         }
     }
 
+    public double bacaDesimal(String label) {
+        while (true) {
+            System.out.print(label + ": ");
+            String input = scanner.nextLine().trim();
+            try {
+                return Double.parseDouble(input);
+            } catch (NumberFormatException e) {
+                System.out.println("Itu bukan angka desimal yang valid, coba lagi.");
+            }
+        }
+    }
+
