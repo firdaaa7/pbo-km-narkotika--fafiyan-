@@ -110,4 +110,10 @@ public class ConsoleView {
             tampilkanDaftar(controller.filterByPengadilan(pengadilan));
         }
     }
+
+    private void prosesHapusData() {
+        String nomor = input.bacaTeks("Nomor Perkara yang dihapus");
+        boolean berhasil = controller.hapusData(nomor);
+        System.out.println(berhasil ? "Data berhasil dihapus." : "Data tidak ditemukan.");
+    }
 }
