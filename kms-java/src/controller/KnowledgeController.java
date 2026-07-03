@@ -14,3 +14,14 @@ public class KnowledgeController {
         this.repository = new KnowledgeRepository();
     }
 
+    public boolean tambahData(Putusan p) throws DataTidakValidException {
+        if (p == null || p.getNomorPerkara().isEmpty()) {
+            throw new DataTidakValidException("Nomor perkara tidak boleh kosong.");
+        }
+        if (repository.cariByNomor(p.getNomorPerkara()) != null) {
+            throw new DataTidakValidException("Nomor perkara '" + p.getNomorPerkara() + "' sudah ada (duplikat).");
+        }
+        repository.simpan(p);
+        return true;
+    }
+
