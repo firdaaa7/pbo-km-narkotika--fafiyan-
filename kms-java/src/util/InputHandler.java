@@ -46,3 +46,13 @@ public class InputHandler {
         }
     }
 
+    public int bacaPilihanMenu(String label, int min, int max) {
+        while (true) {
+            int pilihan = bacaAngka(label);
+            if (pilihan >= min && pilihan <= max) {
+                return pilihan;
+            }
+            System.out.println("Pilihan harus antara " + min + " - " + max + ".");
+        }
+    }
+}
