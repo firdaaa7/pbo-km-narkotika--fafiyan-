@@ -33,4 +33,61 @@ public class StatistikPutusan {
     public String[] getDistribusiPeran() {
         return distribusiPeran;
     }
+
+    public StatistikPutusan(ArrayList<Putusan> daftar) {
+        hitungSemua(daftar);
+    }
+
+    public void hitungSemua(ArrayList<Putusan> daftar) {
+        totalPutusan = daftar.size();
+
+        if (totalPutusan == 0) {
+            rataRataVonis = 0;
+            rataRataDenda = 0;
+            jenisNarkotikaTerbanyak = "-";
+            distribusiPeran = new String[0];
+            return;
+        }
+
+        int totalVonis = 0;
+        double totalDenda = 0;
+        for (Putusan p : daftar) {
+            totalVonis += p.getVonisHukuman();
+            totalDenda += p.getVonisDenda();
+        }
+        rataRataVonis = (double) totalVonis / totalPutusan;
+        rataRataDenda = totalDenda / totalPutusan;
+
+        int[] jumlahPerJenis = new int[KATEGORI_JENIS.length];
+        for (Putusan p : daftar) {
+            for (int i = 0; i < KATEGORI_JENIS.length; i++) {
+                if (p.getJenisNarkotika().equalsIgnoreCase(KATEGORI_JENIS[i])) {
+                    jumlahPerJenis[i]++;
+                    break;
+                }
+            }
+        }
+        int indexTerbanyak = 0;
+        for (int i = 1; i < jumlahPerJenis.length; i++) {
+            if (jumlahPerJenis[i] > jumlahPerJenis[indexTerbanyak]) {
+                indexTerbanyak = i;
+            }
+        }
+        jenisNarkotikaTerbanyak = KATEGORI_JENIS[indexTerbanyak] + " (" + jumlahPerJenis[indexTerbanyak] + " kasus)";
+
+        int[] jumlahPerPeran = new int[KATEGORI_PERAN.length];
+        for (Putusan p : daftar) {
+            for (int i = 0; i < KATEGORI_PERAN.length; i++) {
+                if (p.getPeranTerdakwa().equalsIgnoreCase(KATEGORI_PERAN[i])) {
+                    jumlahPerPeran[i]++;
+                    break;
+                }
+            }
+        }
+        distribusiPeran = new String[KATEGORI_PERAN.length];
+        for (int i = 0; i < KATEGORI_PERAN.length; i++) {
+            distribusiPeran[i] = KATEGORI_PERAN[i] + ": " + jumlahPerPeran[i] + " kasus";
+        }
+    }
+
 }
