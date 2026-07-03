@@ -22,3 +22,15 @@ public class InputHandler {
         return input;
     }
 
+    public int bacaAngka(String label) {
+        while (true) {
+            System.out.print(label + ": ");
+            String input = scanner.nextLine().trim();
+            try {
+                return Integer.parseInt(input);
+            } catch (NumberFormatException e) {
+                System.out.println("Itu bukan angka yang valid, coba lagi.");
+            }
+        }
+    }
+
