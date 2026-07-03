@@ -117,5 +117,44 @@ public class Putusan implements Comparable<Putusan> {
         System.out.println(nomorPerkara + " | " + namaTerdakwa + " | " + jenisNarkotika);
     }
 
+    public void tampilkan(boolean detail) {
+        if (!detail) {
+            tampilkan(); // panggil versi ringkas di atas
+            return;
+        }
+        System.out.println("Nomor Perkara   : " + nomorPerkara);
+        System.out.println("Pengadilan      : " + pengadilan);
+        System.out.println("Tanggal Putusan : " + tanggalPutusan);
+        System.out.println("Nama Terdakwa   : " + namaTerdakwa + " (" + umurTerdakwa + " tahun)");
+        System.out.println("Jenis Narkotika : " + jenisNarkotika);
+        System.out.println("Berat Bukti     : " + beratBarangBukti + " gram");
+        System.out.println("Pasal Dilanggar : " + pasalDilanggar);
+        System.out.println("Peran Terdakwa  : " + peranTerdakwa);
+        System.out.println("Vonis Hukuman   : " + vonisHukuman + " bulan");
+        System.out.println("Vonis Denda     : Rp" + vonisDenda);
+        System.out.println("Hakim Ketua     : " + namaHakim);
+        System.out.println("Kategori        : " + getKategoriHukuman());
+    }
 
+    public String getKategoriHukuman() {
+        if (vonisHukuman < 12) {
+            return "Ringan";
+        } else if (vonisHukuman <= 60) {
+            return "Sedang";
+        } else {
+            return "Berat";
+        }
+    }
+
+    @Override
+    public String toString() {
+        return "Putusan{nomorPerkara='" + nomorPerkara + "', namaTerdakwa='" + namaTerdakwa +
+                "', jenisNarkotika='" + jenisNarkotika + "', vonisHukuman=" + vonisHukuman + "}";
+    }
+
+    @Override
+    public int compareTo(Putusan other) {
+        return Integer.compare(this.vonisHukuman, other.vonisHukuman);
+    }
 }
+
