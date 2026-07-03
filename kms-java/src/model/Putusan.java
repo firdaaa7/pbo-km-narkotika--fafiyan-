@@ -8,11 +8,11 @@ public class Putusan implements Comparable<Putusan> {
     private String namaTerdakwa;
     private int umurTerdakwa;
     private String jenisNarkotika;
-    private double beratBarangBukti;   // dalam gram
+    private double beratBarangBukti;
     private String pasalDilanggar;
     private String peranTerdakwa;
-    private int vonisHukuman;          // dalam bulan
-    private double vonisDenda;         // dalam rupiah
+    private int vonisHukuman;
+    private double vonisDenda;
     private String namaHakim;
 
     private static int jumlahDibuat = 0;
