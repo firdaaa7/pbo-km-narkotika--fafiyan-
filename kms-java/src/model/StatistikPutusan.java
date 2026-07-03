@@ -3,7 +3,6 @@ package model;
 import java.util.ArrayList;
 
 public class StatistikPutusan {
-
     private static final String[] KATEGORI_JENIS = {"Sabu-sabu", "Ganja", "Ekstasi", "Heroin", "Lainnya"};
     private static final String[] KATEGORI_PERAN = {"Bandar", "Kurir", "Pengguna", "Penyimpan", "Lainnya"};
 
@@ -12,7 +11,6 @@ public class StatistikPutusan {
     private double rataRataDenda;
     private String jenisNarkotikaTerbanyak;
     private String[] distribusiPeran;
-
 
     public int getTotalPutusan() {
         return totalPutusan;
