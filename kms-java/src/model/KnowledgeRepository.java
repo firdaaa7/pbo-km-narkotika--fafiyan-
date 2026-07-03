@@ -155,5 +155,167 @@ public class KnowledgeRepository {
                 "Bandar", 108, 1000000000.0,
                 "Darwanto, S.H., M.H."));
 
+        simpan(new Putusan(
+                "28-B/Pid.Sus/2024/PN Sby", "PN Surabaya", "29-02-2024",
+                "Choirul Uman Bin Marsilan", 33, "Sabu-sabu", 101.30,
+                "Pasal 114 ayat (2) UU No. 35 Tahun 2009",
+                "Bandar", 108, 1000000000.0,
+                "Darwanto, S.H., M.H."));
+
+        simpan(new Putusan(
+                "28-C/Pid.Sus/2024/PN Sby", "PN Surabaya", "29-02-2024",
+                "Saipul Bahri Bin Marsilan", 20, "Sabu-sabu", 101.30,
+                "Pasal 114 ayat (2) UU No. 35 Tahun 2009",
+                "Bandar", 108, 1000000000.0,
+                "Darwanto, S.H., M.H."));
+
+        simpan(new Putusan(
+                "29/Pid.Sus/2024/PN.Sby", "PN Surabaya", "07-05-2024",
+                "Akhmad Riyanto Bin Abdul Azis", 43, "Sabu-sabu", 998.8,
+                "Pasal 114 ayat (2) Jo Pasal 132 (1) UU No. 35 Tahun 2009",
+                "Bandar", 180, 2000000000.0,
+                "Alex Adam Faisal, S.H."));
+
+        // Nomor 30: 2 terdakwa → suffix -A, -B
+        simpan(new Putusan(
+                "30-A/Pid.Sus/2024/PN Sby", "PN Surabaya", "19-02-2024",
+                "Abdul Bakir Bin Asnawi", 49, "Sabu-sabu", 20.88,
+                "Pasal 114 ayat (2) Jo Pasal 132 ayat (1) UU No. 35 Tahun 2009",
+                "Bandar", 108, 1000000000.0,
+                "Suparno, S.H., M.H."));
+
+        simpan(new Putusan(
+                "30-B/Pid.Sus/2024/PN Sby", "PN Surabaya", "19-02-2024",
+                "Sujono Bin Nuradji", 37, "Sabu-sabu", 20.88,
+                "Pasal 114 ayat (2) Jo Pasal 132 ayat (1) UU No. 35 Tahun 2009",
+                "Bandar", 108, 1000000000.0,
+                "Suparno, S.H., M.H."));
+
+        simpan(new Putusan(
+                "31/Pid.Sus/2024/PN.Sby", "PN Surabaya", "23-04-2024",
+                "Muchamad Umar Faroq Bin Mat Sukri", 34, "Sabu-sabu", 998.8,
+                "Pasal 114 ayat (2) Jo Pasal 132 (1) UU No. 35 Tahun 2009",
+                "Bandar", 192, 2000000000.0,
+                "Heru Hanindyo, S.H., M.H., LL.M."));
+
+        simpan(new Putusan(
+                "32/Pid.Sus/2024/PN Sby", "PN Surabaya", "05-02-2024",
+                "Alfin Irfian Bin Siswo", 27, "Sabu-sabu", 0.956,
+                "Pasal 112 ayat (1) UU No. 35 Tahun 2009",
+                "Pengguna", 84, 900000000.0,
+                "Dr. Nurnaningsih Amriani, S.H., M.H."));
+
+        simpan(new Putusan(
+                "34/Pid.Sus/2024/PN Sby", "PN Surabaya", "07-03-2024",
+                "Abdul Gefur Bin Asmar", 37, "Sabu-sabu", 0.836,
+                "Pasal 112 ayat (1) UU No. 35 Tahun 2009",
+                "Pengguna", 60, 800000000.0,
+                "Mochammad Djoenaidie, S.H., M.H."));
+
+        simpan(new Putusan(
+                "36/Pid.Sus/2024/PN Sby", "PN Surabaya", "15-02-2024",
+                "Alias Tover Tukan Alias Itong Bin Nico Laos Tukan", 33, "Sabu-sabu", 1.63,
+                "Pasal 114 ayat (1) UU No. 35 Tahun 2009",
+                "Bandar", 72, 1000000000.0,
+                "Moch Taufik Tatas Prihyantono, S.H."));
+
+        simpan(new Putusan(
+                "39/Pid.Sus/2024/PN Sby", "PN Surabaya", "15-02-2024",
+                "Moch. Riadi Bin Moch. Ridwan", 35, "Sabu-sabu", 1.08,
+                "Pasal 114 ayat (1) UU No. 35 Tahun 2009",
+                "Bandar", 78, 1000000000.0,
+                "Erintuah Damanik, S.H., M.H."));
+
+        simpan(new Putusan(
+                "45-A/Pid.Sus/2024/PN Sby", "PN Surabaya", "06-03-2024",
+                "Yoga Hardono Bin Sudarno", 46, "Sabu-sabu", 1.055,
+                "Pasal 114 ayat (2) UU No. 35 Tahun 2009",
+                "Bandar", 144, 2000000000.0,
+                "Antyo Harri Susetyo, S.H."));
+
+        simpan(new Putusan(
+                "45-B/Pid.Sus/2024/PN Sby", "PN Surabaya", "06-03-2024",
+                "Hendrawan Bin Sanurin", 29, "Sabu-sabu", 1.055,
+                "Pasal 114 ayat (2) UU No. 35 Tahun 2009",
+                "Bandar", 144, 2000000000.0,
+                "Antyo Harri Susetyo, S.H."));
+
+        simpan(new Putusan(
+                "49/Pid.Sus/2024/PN Sby", "PN Surabaya", "27-02-2024",
+                "Abdur Rohman Bin Tahli", 40, "Sabu-sabu", 2.16,
+                "Pasal 114 ayat (1) UU No. 35 Tahun 2009",
+                "Bandar", 92, 1000000000.0,
+                "R. Yoes Hartyarso, S.H., M.H."));
+
+        simpan(new Putusan(
+                "50/Pid.Sus/2024/PN Sby", "PN Surabaya", "27-02-2024",
+                "Guntur Pamungkas alias Tupai Bin Wahyudi", 27, "Sabu-sabu", 2.756,
+                "Pasal 114 ayat (1) UU No. 35 Tahun 2009",
+                "Bandar", 96, 1200000000.0,
+                "Sudar, S.H., M.Hum."));
+
+        simpan(new Putusan(
+                "54/Pid.Sus/2024/PN Sby", "PN Surabaya", "27-02-2024",
+                "Warda Andreansyah Bin Suwarso (Alm)", 24, "Sabu-sabu", 0.079,
+                "Pasal 112 ayat (1) UU No. 35 Tahun 2009",
+                "Pengguna", 72, 1000000000.0,
+                "Heru Hanindyo, S.H., M.H., LL.M."));
+
+        simpan(new Putusan(
+                "55/Pid.Sus/2024/PN Sby", "PN Surabaya", "27-02-2024",
+                "Ilham Reza Izzuddin alias Reza Bin Eko Suhartono", 25, "Ganja", 12.72,
+                "Pasal 114 ayat (1) UU No. 35 Tahun 2009",
+                "Bandar", 92, 1000000000.0,
+                "Antyo Harry Susetyo, S.H."));
+
+        simpan(new Putusan(
+                "58/Pid.Sus/2024/PN Sby", "PN Surabaya", "27-02-2024",
+                "Kasmanto Bin Slamet", 38, "Sabu-sabu", 0.079,
+                "Pasal 112 ayat (1) UU No. 35 Tahun 2009",
+                "Pengguna", 60, 1000000000.0,
+                "Saifudin Zuhri, S.H., M.Hum."));
+
+        simpan(new Putusan(
+                "61/Pid.Sus/2024/PN Sby", "PN Surabaya", "27-02-2024",
+                "Fausen alias Kacong Bin Sonhaji", 23, "Sabu-sabu", 0.079,
+                "Pasal 112 ayat (1) UU No. 35 Tahun 2009",
+                "Pengguna", 92, 800000000.0,
+                "Taufan Mandala, S.H., M.Hum."));
+
+        simpan(new Putusan(
+                "62/Pid.Sus/2024/PN Sby", "PN Surabaya", "27-02-2024",
+                "Muhammad Rohman Bin Lukdin", 45, "Sabu-sabu", 0.079,
+                "Pasal 112 ayat (1) UU No. 35 Tahun 2009",
+                "Pengguna", 60, 800000000.0,
+                "Dr. Nurnaningsih Amriani, S.H., M.H."));
+
+        simpan(new Putusan(
+                "64-A/Pid.Sus/2024/PN Sby", "PN Surabaya", "27-02-2024",
+                "M. Abdul Sakur Bin M. Hariri", 26, "Ekstasi", 7.96,
+                "Pasal 132 ayat (1) Jo Pasal 114 ayat (2) UU No. 35 Tahun 2009",
+                "Bandar", 108, 1000000000.0,
+                "Widiarso, S.H., M.H."));
+
+        simpan(new Putusan(
+                "64-B/Pid.Sus/2024/PN Sby", "PN Surabaya", "27-02-2024",
+                "Musaffa Bin Umar", 36, "Ekstasi", 7.96,
+                "Pasal 132 ayat (1) Jo Pasal 114 ayat (2) UU No. 35 Tahun 2009",
+                "Bandar", 108, 1000000000.0,
+                "Widiarso, S.H., M.H."));
+
+        simpan(new Putusan(
+                "65/Pid.Sus/2024/PN Sby", "PN Surabaya", "27-02-2024",
+                "Musaffa Bin Umar", 36, "Ekstasi", 7.96,
+                "Pasal 114 ayat (2) UU No. 35 Tahun 2009",
+                "Pengguna", 108, 1000000000.0,
+                "Ferdinand Marcus Leander, S.H., M.H."));
+
+        simpan(new Putusan(
+                "66/Pid.Sus/2024/PN Sby", "PN Surabaya", "27-02-2024",
+                "Herianto alias Heri Bin Sukri (Alm)", 40, "Sabu-sabu", 3.14,
+                "Pasal 114 ayat (1) UU No. 35 Tahun 2009",
+                "Bandar", 99, 1000000000.0,
+                "Toniwidjaya Hansberd Hilly, S.H."));
+
     }
 
