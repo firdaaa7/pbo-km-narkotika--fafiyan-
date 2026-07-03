@@ -90,4 +90,15 @@ public class StatistikPutusan {
         }
     }
 
+    public void tampilkanLaporan() {
+        System.out.println("===== STATISTIK PUTUSAN =====");
+        System.out.println("Total data       : " + totalPutusan);
+        System.out.println("Rata-rata vonis   : " + rataRataVonis + " bulan");
+        System.out.println("Rata-rata denda   : Rp" + rataRataDenda);
+        System.out.println("Jenis terbanyak   : " + jenisNarkotikaTerbanyak);
+        System.out.println("Distribusi peran  :");
+        for (String baris : distribusiPeran) {
+            System.out.println("  - " + baris);
+        }
+
 }
