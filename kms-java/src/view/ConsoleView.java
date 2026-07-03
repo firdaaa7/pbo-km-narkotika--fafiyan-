@@ -78,4 +78,24 @@ public class ConsoleView {
             System.out.println("Gagal menambah data: " + e.getMessage());
         }
     }
+    private void prosesLihatSemua() {
+        tampilkanDaftar(controller.getSemuaData());
+    }
+
+    private void prosesCariData() {
+        System.out.println("Cari berdasarkan: 1) Nomor Perkara  2) Nama Terdakwa");
+        int pilihan = input.bacaPilihanMenu("Pilih", 1, 2);
+        if (pilihan == 1) {
+            String nomor = input.bacaTeks("Nomor Perkara");
+            Putusan hasil = controller.cariData(nomor);
+            if (hasil != null) {
+                hasil.tampilkan(true);
+            } else {
+                System.out.println("Data tidak ditemukan.");
+            }
+        } else {
+            String nama = input.bacaTeks("Nama Terdakwa");
+            tampilkanDaftar(controller.cariByNama(nama));
+        }
+    }
 }
