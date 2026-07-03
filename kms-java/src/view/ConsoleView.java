@@ -116,4 +116,9 @@ public class ConsoleView {
         boolean berhasil = controller.hapusData(nomor);
         System.out.println(berhasil ? "Data berhasil dihapus." : "Data tidak ditemukan.");
     }
+
+    private void prosesStatistik() {
+        StatistikPutusan stat = controller.getStatistik();
+        stat.tampilkanLaporan();
+    }
 }
